@@ -6,132 +6,185 @@
     <link rel="stylesheet" href="src/output.css" />
     <title>LezzAuth</title>
   </head>
-  <body class="font-inter bg-neutral-800">
+  <body class="font-inter">
     <div class="bg-neutral-800">
       <!-- NAVBAR -->
       <div
-        class="h-[100px] px-[120px] py-3 border-b border-slate-600 border-opacity-20 justify-between items-center flex-shrink-0 flex"
+        class="mx-auto px-8 py-3 md:px-16 md:py-3 border-b border-slate-600 border-opacity-20 justify-between items-center flex-shrink-0 flex"
       >
-        <div class="flex gap-5 items-center">
-          <img src="src/assets/logo/logo_Union.svg" alt="logo LezzAuth" />
-          <img src="src/assets/logo/logo_text_lezzauth.svg" alt="logo LezzAuth" />
+        <div class="flex justify-start gap-3 md:gap-5 items-center">
+          <img
+            class="hidden sm:block sm:w-12 md:w-16"
+            src="src/assets/logo/logo_Union.svg"
+            alt="logo LezzAuth"
+          />
+          <img
+            class="w-20 sm:w-24 md:w-32"
+            src="src/assets/logo/logo_text_lezzauth.svg"
+            alt="logo LezzAuth"
+          />
         </div>
         <div class="flex justify-end items-center gap-2">
           <button
-            class="flex w-32 h-[41px] justify-center items-center gap-2 bg-indigo-600 text-white font-semibold text-base text-center rounded-full"
+            class="hidden sm:block w-24 h-8 px-2 font-medium text-xs sm:fonts md:w-32 md:h-[41px] md:text-base justify-center items-center gap-2 bg-indigo-600 text-white text-center rounded-full"
           >
             Book a Demo
           </button>
           <button
-            class="text-white font-normal text-base text-center tracking-tight hover:bg-transparent"
+            class="text-white font-normal text-xs sm:font-normal sm:text-base text-center tracking-tight hover:bg-transparent"
             href="/"
           >
-            Sign Up
+            Sign in
           </button>
         </div>
       </div>
       <!-- HERO -->
       <div
-        class="w-[1352px] h-[529px] flex-shrink-0 flex flex-col gap-4 items-center mx-auto mt-[66px]"
+        class="w-full mt-8 gap-0 md:w-[1352px] md:mx-auto md:mt-[66px] md:gap-4 flex-shrink-0 flex flex-col items-center"
       >
-        <p
-          class="bg-gradient-to-r from-fuchsia-500 to-indigo-600 text-transparent bg-clip-text text-8xl font-black leading-normal text-center"
+        <h1
+          class="bg-gradient-to-r from-fuchsia-500 to-indigo-600 text-transparent bg-clip-text text-center text-4xl font-extrabold md:text-8xl md:leading-normal md:font-black"
         >
           Not just authentication.
-        </p>
-        <p class="text-white text-6xl font-extrabold text-center mt-8">
+        </h1>
+        <h2
+          class="text-white text-2xl md:text-6xl font-semibold md:font-extrabold text-center mt-4 md:mt-8"
+        >
           Build Complete User Management natively for React and React Native.
-        </p>
-        <p class="text-white text-2xl font-light text-center mt-8">
+        </h2>
+        <p
+          class="text-white text-base font-light md:text-2xl md:font-normal text-center mt-4 md:mt-8"
+        >
           LezzAuth is not just a “sign-in box”. Build your auth and user
           management, that generate natively into React, NextJs, and React
           Native!
         </p>
         <button
-          class="w-[202px] h-16 px-4 bg-indigo-500 rounded-full justify-center items-center gap-2 inline-flex text-white text-lg font-semibold leading-loose mt-8"
+          class="w-32 h-10 px-2 text-sm font-medium mt-6 md:w-[202px] md:h-16 md:px-4 md:font-semibold md:text-lg md:mt-8 gap-2 bg-indigo-500 rounded-full justify-center items-center inline-flex text-white leading-loose"
         >
           Book a Demo
         </button>
       </div>
       <!-- DASHBOARD LARGE -->
       <div
-        class="flex w-[1280px] h-[644px] relative mt-[92px] mx-auto justify-center items-center"
+        class="flex w-full mt-16 md:w-[1280px] mx-auto relative sm:mt-[92px] justify-center items-center px-1"
       >
-        <img
+        <img src="src/assets/img/dashboard_large.png" alt="Dashboard Large" />
+        <!-- <img
           class="rounded-3xl"
           src="src/assets/img/dashboard.png"
           alt="dashboard image"
         />
         <img
-        class="left-[1026px] top-[139px] absolute shadow"
-        src="src/assets/img/signup.png"
-        alt="signup image"
+          class="left-[1026px] top-[139px] absolute shadow"
+          src="src/assets/img/signup.png"
+          alt="signup image"
         />
         <img
           class="left-[-99px] top-[79px] absolute shadow"
           src="src/assets/img/signin.png"
           alt="signin image"
-        />
+        /> -->
       </div>
       <!-- SECTION FEATURE -->
-      <div class="w-[1488px] h-[586px] mt-[190px] flex-shrink-0 relative flex flex-nowrap mx-auto justify-between self-stretch">
-        <div class="">
-          <p class="text-5xl font-bold leading-normal">
-            <span class="bg-gradient-to-r from-fuchsia-500 to-indigo-600 text-transparent bg-clip-text">Auth & User Management</span><br>
-            <span class="text-white">with just</span><br>
-            <span class="bg-gradient-to-r from-fuchsia-500 to-indigo-600 text-transparent bg-clip-text">One Line</span>
+      <div
+        class="w-full mt-12 px-2 mx-auto sm:px-0 sm:w-[1488px] sm:mt-[190px] sm:flex sm:flex-nowrap sm:flex-shrink-0 relative justify-between items-center self-stretch"
+      >
+        <div>
+          <p
+            class="text-3xl leading-snug font-bold sm:text-5xl sm:leading-normal"
+          >
+            <span
+              class="bg-gradient-to-r from-fuchsia-500 to-indigo-600 text-transparent bg-clip-text"
+              >Auth & User Management</span
+            >
+            <br />
+            <span class="text-white">with just</span><br />
+            <span
+              class="bg-gradient-to-r from-fuchsia-500 to-indigo-600 text-transparent bg-clip-text"
+              >One Line</span
+            >
             <span class="text-white">of Code</span>
           </p>
-          <div>
-            <div class="flex w-[512px] h-16 px-8 py-2.5 bg-zinc-900 rounded-lg items-center gap-2.5 border-l-8 border-fuchsia-600 justify-start mt-[35px]">
-              <p class="text-3xl font-normal font-montserrat">
+          <div class="mt-8">
+            <div
+              class="flex w-auto h-10 px-4 py-2 gap-2 border-l-8 rounded mt-4 sm:w-[512px] sm:h-16 sm:px-8 sm:py-2.5 sm:gap-2.5 sm:border-l-8 sm:mt-[35px] sm:rounded-lg bg-zinc-900 items-center border-fuchsia-600 justify-start"
+            >
+              <p class="text-xl sm:text-3xl font-normal font-montserrat">
                 <span class="text-white text-opacity-40">&lt;</span>
                 <span class="text-white">SignIn</span>
                 <span class="text-white text-opacity-40">/&gt;</span>
               </p>
             </div>
-            <div class="flex w-[512px] h-16 px-8 py-2.5 bg-zinc-900 rounded-lg items-center gap-2.5 border-l-8 border-white border-opacity-40 justify-start mt-[35px]">
-              <p class="text-3xl font-normal font-montserrat">
+            <div
+              class="flex w-auto h-10 px-4 py-2 border-l-8 rounded mt-4 sm:w-[512px] sm:h-16 sm:px-8 sm:py-2.5 sm:rounded-lg sm:gap-2.5 sm:border-l-8 sm:mt-[35px] bg-zinc-900 items-center border-white border-opacity-40 justify-start"
+            >
+              <p class="text-xl sm:text-3xl font-normal font-montserrat">
                 <span class="text-white text-opacity-40">&lt;Signup/&gt;</span>
               </p>
             </div>
-            <div class="flex w-[512px] h-16 px-8 py-2.5 bg-zinc-900 rounded-lg items-center gap-2.5 border-l-8 border-white border-opacity-40 justify-start mt-[35px]">
-              <p class="text-3xl font-normal font-montserrat">
-                <span class="text-white text-opacity-40">&lt;UserButton/&gt;</span>
+            <div
+              class="flex w-auto h-10 px-4 py-2 border-l-8 rounded mt-4 sm:w-[512px] sm:h-16 sm:px-8 sm:py-2.5 sm:rounded-lg sm:gap-2.5 sm:border-l-8 sm:mt-[35px] bg-zinc-900 items-center border-white border-opacity-40 justify-start"
+            >
+              <p class="text-xl sm:text-3xl font-normal font-montserrat">
+                <span class="text-white text-opacity-40"
+                  >&lt;UserButton/&gt;</span
+                >
               </p>
             </div>
-            <div class="flex w-[512px] h-16 px-8 py-2.5 bg-zinc-900 rounded-lg items-center gap-2.5 border-l-8 border-white border-opacity-40 justify-start mt-[35px]">
-              <p class="text-3xl font-normal font-montserrat">
-                <span class="text-white text-opacity-40">&lt;UserProfile/&gt</span>
+            <div
+              class="flex w-auto h-10 px-4 py-2 border-l-8 rounded mt-4 sm:w-[512px] sm:h-16 sm:px-8 sm:py-2.5 sm:rounded-lg sm:gap-2.5 sm:border-l-8 sm:mt-[35px] bg-zinc-900 items-center border-white border-opacity-40 justify-start"
+            >
+              <p class="text-xl sm:text-3xl font-normal font-montserrat">
+                <span class="text-white text-opacity-40"
+                  >&lt;UserProfile/&gt</span
+                >
               </p>
             </div>
           </div>
         </div>
-        <div class="items-end ">
-          <img src="src/assets/img/section.png" alt="section sample">
-          <img class="absolute left-[909px] top-[52px] shadow" src="src/assets/img/signin.png" alt="sign in">
+        <div class="mt-8 sm:mb-auto sm:mt-0 items-end">
+          <img src="src/assets/img/section.png" alt="section sample" />
+          <img
+            class="mt-4 sm:absolute sm:left-[909px] sm:top-[52px] sm:w-[397px] sm:mt-0 shadow"
+            src="src/assets/img/signin.png"
+            alt="sign in"
+          />
           <!-- <button class="absolute w-32 h-11 px-4 bg-indigo-500 rounded-full justify-center items-center gap-2 flex text-white text-lg font-bold leading-loose">
             View Code
           </button> -->
         </div>
       </div>
       <!-- SECTION START -->
-      <div class="flex w-[1100px] h-[304px] flex-col justify-center items-center px-48 gap-14 mt-[103px] mx-auto">
-        <p class="text-white text-5xl font-bold text-center leading-normal">
+      <div
+        class="flex w-full md:w-[1100px] px-4 md:px-12 gap-14 flex-col justify-center items-center mt-8 sm:mt-[103px] mx-auto"
+      >
+        <p
+          class="text-white text-3xl sm:text-5xl font-bold text-center leading-normal"
+        >
           Build Natively for your favorite frontend stack
         </p>
-        <div class="flex items-start gap-[100px]">
-          <img class="w-[100px] h-[100px]" src="src/assets/icon/react_ico.svg" alt="React">
-          <img class="w-[100px] h-[100px]" src="src/assets/icon/nextjs_ico.svg" alt="NextJS">
-          <img class="w-[100px] h-[100px]" src="src/assets//icon//react-native_ico.png" alt="React native">
+        <div
+          class="flex justify-center items-start gap-8 w-14 h-14 sm:gap-[100px] sm:w-[100px] sm:h-[100px]"
+        >
+          <img src="src/assets/icon/react_ico.svg" alt="React" />
+          <img src="src/assets/icon/nextjs_ico.svg" alt="NextJS" />
+          <img
+            src="src/assets//icon//react-native_ico.png"
+            alt="React native"
+          />
         </div>
       </div>
       <!-- FOOTER -->
-      <div class="flex h-[68px] justify-between items-center px-28 py-5 bg-zinc-900  mt-[193px] mx-auto">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center px-4 md:px-28 py-5 bg-zinc-900 mt-16 sm:mt-[193px] mx-auto"
+      >
         <p class="text-white text-base font-semibold">
           Copyright ©2024 lezzauth.com
         </p>
-        <div class="text-white text-base font-semibold justify-start items-start gap-8 flex">
+        <div
+          class="text-white text-base font-normal sm:font-bold justify-start items-start gap-8 flex mt-8 sm:mt-0"
+        >
           <a href="/">Book a Demo</a>
           <a href="/">Sign in</a>
         </div>
