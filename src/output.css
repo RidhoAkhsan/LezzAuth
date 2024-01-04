@@ -580,6 +580,10 @@ html {
   margin-top: auto;
 }
 
+.mt-0{
+  margin-top: 0px;
+}
+
 .flex{
   display: flex;
 }
@@ -634,6 +638,10 @@ html {
 
 .flex-shrink-0{
   flex-shrink: 0;
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -892,6 +900,10 @@ html {
   line-height: 1.375;
 }
 
+.leading-10{
+  line-height: 2.5rem;
+}
+
 .tracking-tight{
   letter-spacing: -0.025em;
 }
@@ -991,6 +1003,10 @@ html {
     flex-direction: row;
   }
 
+  .sm\:gap-8{
+    gap: 2rem;
+  }
+
   .sm\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1074,6 +1090,15 @@ html {
 
   .md\:w-auto{
     width: auto;
+  }
+
+  .md\:w-full{
+    width: 100%;
+  }
+
+  .md\:w-fit{
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .md\:gap-10{
